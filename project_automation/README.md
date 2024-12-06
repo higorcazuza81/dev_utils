@@ -5,7 +5,7 @@
 
 This directory contains scripts designed to automate the creation of project structures, making it easier to set up and organize your development environment. These scripts help you quickly scaffold new projects with pre-defined directory structures, saving time and effort.
 
-## 🚀 Available Scripts
+## Available Scripts
 
 ### 1. **`pyproj.sh`** - Python Project Structure Automation
 The `pyproj.sh` script automates the creation of a Python project structure, organizing your project with essential directories and files.
@@ -133,17 +133,17 @@ my_sql_project/
 
 ---
 
-## 🛠️ Customizing the Scripts
+## Customizing the Scripts
 Both scripts are designed to be easily customizable:
 - You can modify the directories created or adjust the naming conventions to fit your project's needs.
 - The scripts are written in bash, so you can easily update or extend them by editing the shell commands inside the script files.
 
-## 🌟 Contribute and Feedback
+## Contribute and Feedback
 Feel free to fork the repository, contribute improvements, or suggest new features. If you encounter any issues or have suggestions, please submit them via the [GitHub Issues page](https://github.com/your-username/dev-utils/issues).
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the [MIT License](../LICENSE).
 
 
