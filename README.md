@@ -13,10 +13,10 @@
 
 ### 1. **Project Automation Tools**
 - **`pyproj.sh`** – Automates the creation of Python project structures.  
-  [View README](./project-automation/README.md)
+  [View README](./project_automation/README.md)
 
 - **`sqlproj.sh`** *(Coming soon)* – Automates the creation of SQL project structures.  
-  [View README](./project-automation/README.md)
+  [View README](./project_automation/README.md)
 
 ### 2. **Data Engineering Utilities** *(Planned)*
 - Tools for managing ETL workflows.
