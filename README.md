@@ -1,51 +1,47 @@
-# Dev Utils: Tools for Data Engineers and Developers
+# Dev Utils: Tools for Developers and Data Engineers
 
-**Dev Utils** is a collection of essential scripts designed to boost productivity for data engineers and developers working on Linux and macOS. Whether you’re setting up a new project, automating workflows, or managing data pipelines, these tools simplify your daily tasks and save valuable time.
+**Dev Utils** is a collection of useful scripts developed to make the work of data engineers and developers on Linux and macOS easier. Whether you're setting up a new project, automating workflows, or managing data pipelines, these scripts can help streamline daily tasks and save time.
 
-## 🚀 Why Use Dev Utils?
+## Why use Dev Utils?
 
-- **Time-Saving Automation:** Streamline repetitive tasks, like creating project structures or configuring environments.
-- **Tailored for Data Engineers:** Tools designed with the challenges of data engineering in mind.
-- **Cross-Platform Compatibility:** Works seamlessly on Linux and macOS.
-- **Customizable and Open Source:** Modify the scripts to fit your specific needs.
+- **Time-saving automation:** Automate repetitive tasks like creating project structures or configuring environments.
+- **Focused on Data Engineering:** Tools designed with the needs of data professionals in mind.
+- **Cross-platform compatibility:** Works well on both Linux and macOS.
+- **Customizable and Open Source:** The scripts are open, so you can modify and adapt them to your needs.
 
-## 📂 What's Inside?
+## What's Included?
 
 ### 1. **Project Automation Tools**
-- **`pyproj.sh`** – Automate the creation of Python project structures.  
-  [View README](./project-automation/pyproj/README.md)
+- **`pyproj.sh`** – Automates the creation of Python project structures.  
+  [View README](./project-automation/README.md)
 
-- **`sqlproj.sh`** *(Coming Soon)* – Automate the creation of SQL project structures.  
-  [View README](./project-automation/sqlproj/README.md)
+- **`sqlproj.sh`** *(Coming soon)* – Automates the creation of SQL project structures.  
+  [View README](./project-automation/README.md)
 
 ### 2. **Data Engineering Utilities** *(Planned)*
 - Tools for managing ETL workflows.
 - Scripts for database and cloud automation.
 
-### 3. **Linux & macOS Productivity Scripts**
-- Handy tools to optimize your development environment.
-- [View README](./linux-macos/README.md)
+---
+
+## How to Use
+
+For detailed usage instructions and setup for each script, please check the individual READMEs in the `project-automation` directory.
 
 ---
 
-## 🛠️ How to Use
+## Contributions and Support
 
-For detailed usage instructions and setup for each script, please refer to their individual READMEs linked above.
-
----
-
-## 🌟 Contribute and Support
-Help us grow this collection by:
-- Giving the repository a ⭐ **star** to show your support.
-- Submitting ideas or feature requests via [issues](https://github.com/your-username/dev-utils/issues).
-- Contributing scripts or improvements through pull requests.
+Feel free to:
+- Contribute ideas or feature requests through [issues](https://github.com/your-username/dev-utils/issues).
+- Contribute scripts or improvements via pull requests.
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## ⭐ Acknowledgements
-Thanks to the open-source community for inspiration and contributions. Together, we create better tools!
+## Acknowledgments
+This project reflects the collaborative spirit of the open-source community, which makes the continuous development and improvement of useful tools possible for everyone.
