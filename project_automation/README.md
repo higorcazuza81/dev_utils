@@ -8,65 +8,105 @@ This directory contains scripts designed to automate the creation of project str
 ## Available Scripts
 
 ### 1. **`pyproj.sh`** - Python Project Structure Automation
-The `pyproj.sh` script automates the creation of a Python project structure, organizing your project with essential directories and files.
 
-#### Features:
-- Creates the following directories:
-  - `app/routers`, `app/schemas`, `app/services`, `app/repositories`, `app/models`, `app/middleware`, `app/utils`, `app/config`
-  - `tests`, `migrations`, and `docs`
+The **`pyproj.sh`** script automates the creation of Python project structures, saving time and providing a clean, scalable, and standardized organization for your projects. Whether you're using **FastAPI**, **Flask**, or **Django**, this tool adapts to your needs.
+
+---
+
+## **Features**
+
+- Creates a complete project structure, including the following directories:
+  ```
+  app/
+  ├── routers/
+  ├── schemas/
+  ├── services/
+  ├── repositories/
+  ├── models/
+  ├── middleware/
+  ├── utils/
+  └── config/
+  migrations/
+  tests/
+  docs/
+  ```
 - Adds `__init__.py` files to make directories Python packages.
-- Creates a `README.md` file for project documentation.
-- Ideal for Python frameworks like FastAPI, Flask, or Django.
-- Organizes your project in a standard, easily customizable way.
+- Generates a `README.md` file for basic project documentation.
+- Works out-of-the-box for common Python frameworks.
+- Fully customizable for unique project requirements.
 
-#### Usage:
+---
 
-1. Clone the repository (if you haven’t already):
+## **Installation**
+
+### **Option 1: Run Directly from the Cloned Repository**
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dev-utils.git
+   git clone https://github.com/higorcazuza81/dev-utils.git
    cd dev-utils
    ```
-
 2. Make the script executable:
    ```bash
    chmod +x project_automation/pyproj.sh
    ```
-
-3. Run the script with your project name as an argument:
+3. Run the script:
    ```bash
-   ./project_automation/pyproj.sh my_python_project
+   ./project_automation/pyproj.sh <project_name>
    ```
 
-   This will create a directory called `my_python_project` with the following structure:
+### **Option 2: Install for Global Access**
+
+To simplify usage and allow running the script from anywhere:
+
+1. **Move the script to a custom `bin` directory**:
+   ```bash
+   mkdir -p ~/bin
+   cp project_automation/pyproj.sh ~/bin/
    ```
-   my_python_project/
-   ├── app/
-   │   ├── routers/
-   │   ├── schemas/
-   │   ├── services/
-   │   ├── repositories/
-   │   ├── models/
-   │   ├── middleware/
-   │   ├── utils/
-   │   └── config/
-   ├── migrations/
-   ├── tests/
-   ├── docs/
-   └── README.md
+2. **Make the script executable**:
+   ```bash
+   chmod +x ~/bin/pyproj.sh
+   ```
+3. **Add `bin` to your PATH**:
+   - Open your shell configuration file (`~/.zshrc` or `~/.bashrc`).
+   - Add this line:
+     ```bash
+     export PATH="$HOME/bin:$PATH"
+     ```
+   - Apply the changes:
+     ```bash
+     source ~/.zshrc
+     ```
+
+4. Rename for convenience (optional):
+   ```bash
+   mv ~/bin/pyproj.sh ~/bin/pyproj
    ```
 
-4. The script also creates an `__init__.py` file in each of the subdirectories inside `app/` to make them Python packages, and adds a basic `README.md` file in the root project directory.
-
-#### Example:
-
-If you run:
+Now you can run:
 ```bash
-./project_automation/pyproj.sh my_new_project
+pyproj <project_name>
 ```
 
-It will generate the following structure:
+---
+
+## **Usage**
+
+### **Command**
+Run the script with your desired project name:
+```bash
+pyproj <project_name>
 ```
-my_new_project/
+
+### **Example**
+```bash
+pyproj my_project
+```
+
+This will create the following structure:
+```
+my_project/
 ├── app/
 │   ├── routers/
 │   ├── schemas/
@@ -82,13 +122,57 @@ my_new_project/
 └── README.md
 ```
 
-#### Customization:
-- You can modify the script to add or remove directories, depending on the requirements of your project.
-- The script can be adapted to suit specific frameworks or project setups by editing the `pyproj.sh` script.
+---
 
-#### Requirements:
-- This script should work on both **Linux** and **macOS** systems.
-- Make sure you have `bash` installed (which is the default shell on most Linux and macOS systems).
+## **Customization**
+
+The script is fully customizable. Edit the `pyproj.sh` file to:
+- Add/remove directories.
+- Create additional files, like `.gitignore`, `setup.py`, or environment configuration files.
+- Adapt the structure for specific frameworks or workflows.
+
+Example: Add a `.gitignore` file or a `main.py` for FastAPI.
+
+---
+
+## **Troubleshooting**
+
+1. **Script not found**:  
+   Ensure the `bin` directory is in your PATH:
+   ```bash
+   echo $PATH
+   ```
+   If not, recheck your shell configuration file and restart the terminal.
+
+2. **Permission issues**:  
+   If you see a "Permission Denied" error, ensure the script is executable:
+   ```bash
+   chmod +x ~/bin/pyproj
+   ```
+
+3. **Incorrect structure**:  
+   Check the script content to verify the directories and files being created match your needs.
+
+---
+
+## **Advanced Usage**
+
+1. **Quick Setup with Aliases**:  
+   Add an alias for the script in your shell configuration:
+   ```bash
+   alias pyproj='~/bin/pyproj'
+   ```
+
+2. **Default Directory**:  
+   Modify the script to always create projects in a specific directory, e.g., `~/projects`.
+
+---
+
+## **Requirements**
+
+- **Operating System**: Linux or macOS.
+- **Shell**: Bash or Zsh (default on most systems).  
+Ensure `bash` is installed and available.
 
 ---
 
